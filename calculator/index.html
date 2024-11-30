@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pranjal personal calculator</title>
+  </head>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4, #f53d0a);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-align: center;
+      height: 100vh;
+    }
+
+    .container {
+      box-shadow: 0px 0px 10px 5px #555;
+      margin-left: 30%;
+      margin-right: 30%;
+      margin-top: 10%;
+
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      overflow: hidden;
+    }
+    .buttons {
+      background-color: white;
+      display: grid;
+      border-bottom-left-radius: 25px;
+      grid-template-columns: auto auto auto auto;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4, #f53d0a);
+      gap: 2px;
+    }
+    .display {
+      width: 100%;
+      height: 11vh;
+      font-size: 2.4em;
+      padding: 0;
+      margin: 0;
+      border: none;
+      text-align: right;
+      background-color: #222;
+      color: white;
+    }
+    button {
+      padding: 20px;
+      font-size: 30px;
+      color: white;
+      background-color: #333;
+      outline: none;
+      direction: none;
+      border: none;
+      transition: 0.3s;
+    }
+    .zero {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .equal {
+      grid-row: span 2;
+      background-color: #ff9500;
+      border-bottom-right-radius: 25px;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    button.equal:hover {
+      background-color: #e08500;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <input type="text" class="display" disabled />
+      <div class="buttons">
+        <button>C</button><button>/</button><button>*</button><button>⌫</button
+        ><button>7</button><button>8</button><button>9</button><button>-</button
+        ><button>4</button><button>5</button><button>4</button><button>+</button
+        ><button>1</button><button>2</button><button>3</button
+        ><button class="equal">=</button><button class="zero">0</button
+        ><button>.</button>
+      </div>
+    </div>
+  </body>
+</html>
